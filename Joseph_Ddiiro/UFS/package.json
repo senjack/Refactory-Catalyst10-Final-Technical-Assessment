@@ -2,7 +2,7 @@
   "name": "ufs",
   "version": "1.0.0",
   "description": "A system to help with issuing loans to clients during covid",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app"
   },
@@ -10,14 +10,19 @@
   "license": "ISC",
   "dependencies": {
     "body": "^5.1.0",
+    "body-parser": "^1.20.0",
+    "connect": "^3.7.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "express-session": "^1.17.2",
     "express-sessions": "^1.0.6",
+    "express-validator": "^6.14.0",
     "joi": "^17.6.0",
     "mongoose": "^6.2.11",
     "nodemon": "^2.0.15",
     "parser": "^0.1.4",
     "path": "^0.12.7",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "sessions": "^0.0.2-7"
   }
 }
