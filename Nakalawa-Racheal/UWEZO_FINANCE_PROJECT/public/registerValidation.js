@@ -72,43 +72,43 @@ const validateNin = () => {
 	return true;
 }
 
-const validateBirthDate = () => {
-	const birthDate = document.register.birthdate;
-	const errorLabel = document.querySelector(".bd-error");
+// const validateBirthDate = () => {
+// 	const birthDate = document.register.birthdate;
+// 	const errorLabel = document.querySelector(".bd-error");
 
-	if((Date.now()-birthDate.value)<18) {
-		errorLabel.textContent = errMessageProducer(birthDate.value, "User accessing loan should be above 18yrs");
-		birthDate.classList.add('shadow-none');
-		birthDate.style.borderColor = 'red';
-		birthDate.focus();
-		return false;
-	}
+// 	if((Date.now()-birthDate.value)<18) {
+// 		errorLabel.textContent = errMessageProducer(birthDate.value, "User accessing loan should be above 18yrs");
+// 		birthDate.classList.add('shadow-none');
+// 		birthDate.style.borderColor = 'red';
+// 		birthDate.focus();
+// 		return false;
+// 	}
 
-	errorLabel.textContent = "";
-	birthDate.classList.remove('shadow-none');
-	birthDate.style.borderColor = 'lightgray';
-	document.register.occupation.focus();
-	return true;
-}
+// 	errorLabel.textContent = "";
+// 	birthDate.classList.remove('shadow-none');
+// 	birthDate.style.borderColor = 'lightgray';
+// 	document.register.occupation.focus();
+// 	return true;
+// }
 
-const validateOccupation = () => {
-	const occupation = document.register.occupation;
-	const errorLabel = document.querySelector(".occ-error");
+// const validateOccupation = () => {
+// 	const occupation = document.register.occupation;
+// 	const errorLabel = document.querySelector(".occ-error");
 
-	if(!(occupation.value.match(occupationComp))) {
-		errorLabel.textContent = errMessageProducer(occupation.value, "Occupation entered should be between 2-255 letters")
-		occupation.classList.add('shadow-none');
-		occupation.style.borderColor = 'red';
-		occupation.focus();
-		return false;
-	}
+// 	if(!(occupation.value.match(occupationComp))) {
+// 		errorLabel.textContent = errMessageProducer(occupation.value, "Occupation entered should be between 2-255 letters")
+// 		occupation.classList.add('shadow-none');
+// 		occupation.style.borderColor = 'red';
+// 		occupation.focus();
+// 		return false;
+// 	}
 
-	errorLabel.textContent = "";
-	occupation.classList.remove('shadow-none');
-	occupation.style.borderColor = 'lightgray';
-	document.register.workplace.focus();
-	return true;
-}
+// 	errorLabel.textContent = "";
+// 	occupation.classList.remove('shadow-none');
+// 	occupation.style.borderColor = 'lightgray';
+// 	document.register.workplace.focus();
+// 	return true;
+// }
 
 const validateWorkPlace = () => {
 	const workPlace = document.register.workplace;
@@ -219,10 +219,10 @@ const validateRegister = (e) => {
 		return
 	}
 
-	if(!validateBirthDate()) {
-		e.preventDefault();
-		return
-	}
+	// if(!validateBirthDate()) {
+	// 	e.preventDefault();
+	// 	return
+	// }
 
 	if(!validateOccupation()) {
 		e.preventDefault();
