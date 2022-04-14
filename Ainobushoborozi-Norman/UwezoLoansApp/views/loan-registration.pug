@@ -1,0 +1,63 @@
+extends layout 
+
+block content 
+    -data = data || {}
+
+    img(src="/images/0_FornHeader.png", alt="")
+    h1 Loan Request Form
+    if errors
+        ul
+            for error in errors
+                li= error.msg
+    form(action="/" method="POST")
+        .form-row
+            .form-group.col-md-6
+                label(for='inputSurname') Surname
+                input#inputSurname.form-control(
+                    type='text'
+                    name='surname' 
+                    value=data.surname
+                 )
+            .form-group.col-md-6
+                label(for='inputGivenname') Given name
+                input#inputGivenname.form-control(
+                    type='text'
+                    name='givenname'
+                    value=data.givenname
+                    )
+        .form-row
+            .form-group.col-md-6
+                label(for='inputNIN') NIN
+                input#inputNIN.form-control(type='text', name='nin', value=data.nin)
+            .form-group.col-md-6
+                label(for='inputDoB') Date of Birth
+                input#inputDoB.form-control(type='text', name='dob', value=data.dob, placeholder='YY / MM / DD')    
+        .form-row
+            .form-group.col-md-6
+                label(for='inputOccupation') Occupation
+                input#inputOccupation.form-control(type='text', name='occupation', value=data.occupation)
+            .form-group.col-md-6
+                label(for='inputWorkPlace') Place of Work
+                input#inputWorkPlace.form-control(type='text', name='pow', value=data.pow)
+        .form-row
+            .form-group.col-md-6
+                label(for='exampleFormControlSelect1') Gender
+                select#exampleFormControlSelect1.form-control(name='gender', value=data.gender)
+                    option -- Select Gender --
+                    option Male
+                    option Female
+            .form-group.col-md-6
+                label(for='inputLoanAmount') Loan Amount
+                input#inputLoanAmount.form-control(type='text', name='amount', value=data.amount)
+        .form-row
+            .form-group.col-md-6
+                label(for='inputSecurity') Loan Security
+                input#inputSecurity.form-control(type='text', name='security', value=data.security)
+            .form-group.col-md-6
+                label(for='inputFallback') Fall Back Security
+                input#inputFallback.form-control(type='text', name='fallback', value=data.fallback)
+
+        .form-row
+            .form-group.col-md-6
+            .form-group.col-md-6
+                button.btn(type='submit') Register
