@@ -61,7 +61,8 @@ function Validation() {
 
     validateInputs();
 })
-//if error existts
+}
+
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
@@ -78,12 +79,38 @@ const setSuccess = element => {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-};
-
-
-
-
 }
+
+const validateInputs = () => {
+    const surname = surname.value.trim();
+    const givenname = givenname.value.trim();
+    const nin = nin.value.trim();
+    const date = date.value.trim();
+    const occupation = occupation.value.trim()
+    const work = work.value.trim()
+    const gender = gender.value.trim()
+    const loan = loan.value.trim()
+    const security = loan.vaulue.trim()
+    const fullback = load.value.trim()
+
+    if(surname === '' || surname.length < 2 ) {
+        setError(surname, 'Surname is required');
+    } else {
+        setSuccess(username);
+    }
+
+     if(givenname === '' || givenname.length < 2 ) {
+        setError(givenname, 'Surname is required');
+    } else {
+        setSuccess(givenname);
+    }
+
+     if(surname === '' ) {
+        setError(nin, 'Surname is required');
+    } else {
+        setSuccess(username);
+    }
+};
 
 
 
