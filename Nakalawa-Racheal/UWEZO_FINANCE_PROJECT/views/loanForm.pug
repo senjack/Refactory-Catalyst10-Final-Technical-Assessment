@@ -13,33 +13,45 @@ main.d-flex.align-items-center.justify-content-center
     .mb-3
       label.form-label(for='surname') Sur Name
       input#surname.form-control.shadow-none(type='text' name='surname' aria-describedby='emailHelp')
+      label.text-danger.form-text.error-label.sn-error
     .mb-3
       label.form-label(for='givenname') Given Name
       input#givenname.form-control.shadow-none(type='text' name='givenname' aria-describedby='emailHelp')
+      label.text-danger.form-text.error-label.gn-error
     .mb-3
       label.form-label(for='nin') NIN
       input#nin.form-control.shadow-none(type='text' name='nin')
+      label.text-danger.form-text.error-label.nin-error
     .mb-3
       label.form-label(for='birthdate') Date Of Birth
       input#birthdate.form-control.shadow-none(type='text' placeholder='YY/DD/MM' name='birthdate')
+      label.text-danger.form-text.error-label.bd-error
     .mb-3
       label.form-label(for='occupation') Occupation
       input#occupation.form-control.shadow-none(type='text' name='occupation')
+      label.text-danger.form-text.error-label.occ-error
     .mb-3
       label.form-label(for='workplace') Place of Work
       input#workplace.form-control.shadow-none(type='text' name='workplace')
-    select#genderoption.form-select.mb-3(name='genderoption' aria-label='Default select example')
-      option(value='default' selected='') ----Select gender---
-      option(value='Female') Female
-      option(value='Male') Male
+      label.text-danger.form-text.error-label.work-error
+    .mb-3
+      select#genderoption.form-select.mb-3(name='genderoption' aria-label='Default select example')
+        option(value='default' selected='') ----Select gender---
+        option(value='Female') Female
+        option(value='Male') Male
+      label.error-label.gender-error
     .mb-3
       label.form-label(for='loanamount') Loan Amount
       input#loanamount.form-control.shadow-none(type='Number' name='loanamount')
+      label.text-danger.form-text.error-label.lamt-error
     .mb-3
       label.form-label(for='loansecurity') Loan Security
       input#loansecurity.form-control.shadow-none(type='text' name='loansecurity' aria-describedby='help')
+      label.text-danger.form-text.error-label.lscty-error
     .mb-3
       label.form-label(for='fallbacksecurity') Fall Back Security
       input#fallbacksecurity.form-control.shadow-none(type='text' name='fallbacksecurity' aria-describedby='help')
-    button.btn.button-primary.w-50(type='submit' onclick='') Register
+      label.text-danger.form-text.error-label.lfbck-error
+    button.btn.button-primary.w-50(type='submit' onclick='validateRegister(event)') Register
   script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+  script(src='/registrationValidation.js')

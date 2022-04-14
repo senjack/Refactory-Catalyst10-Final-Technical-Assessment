@@ -25,57 +25,69 @@
 			<div class="mb-3">
 				<label for="surname" class="form-label">Sur Name</label>
 				<input type="text"  class="form-control shadow-none" id="surname" name="surname" aria-describedby="emailHelp">
+				<label class="text-danger form-text error-label sn-error" ></label>
 			</div>
 			<div class="mb-3">
 				<label for="givenname" class="form-label">Given Name</label>
 				<input type="text" class="form-control shadow-none" id="givenname" name="givenname" aria-describedby="emailHelp">
+				<label class="text-danger form-text error-label gn-error" ></label>
 			</div>
 
 			<div class="mb-3 " >
 				<label for="nin" class="form-label">NIN</label>
 				<input type="text" class="form-control shadow-none" id="nin" name="nin" >
+				<label class="text-danger form-text error-label nin-error" ></label>
 			</div>
 
 			<div class="mb-3 ">
 				<label for="birthdate" class="form-label">Date Of Birth</label>
 				<input type="text" class="form-control shadow-none" placeholder="YY/DD/MM" id="birthdate" name="birthdate" >
+				<label class="text-danger form-text error-label bd-error" ></label>
 			</div>
 
 
 			<div class="mb-3 ">
 				<label for="occupation" class="form-label">Occupation</label>
 				<input type="text" class="form-control shadow-none" id="occupation" name="occupation" >
+				<label class="text-danger form-text error-label occ-error" ></label>
 			</div>
 
 			<div class="mb-3 ">
 				<label for="workplace" class="form-label">Place of Work</label>
 				<input type="text" class="form-control shadow-none" id="workplace" name="workplace" >
+				<label class="text-danger form-text error-label work-error" ></label>
 			</div>
 			
+			<div class="mb-3 ">
 			<select class="form-select mb-3" name="genderoption" id="genderoption"aria-label="Default select example">
 				<option value="default" selected="">----Select gender---</option>
 				<option value="Female">Female</option>
 				<option value="Male">Male</option>
 			</select>
+			<label class=" error-label gender-error" ></label>
+			</div>
 
 			<div class="mb-3">
 				<label for="loanamount" class="form-label">Loan Amount</label>
 				<input type="Number" class="form-control shadow-none" id="loanamount" name="loanamount" >
+				<label class="text-danger form-text error-label lamt-error" ></label>
 			</div>
 
 				<div class="mb-3 ">
 					<label for="loansecurity" class="form-label">Loan Security</label>
 					<input type="text"class="form-control shadow-none" id="loansecurity" name="loansecurity" aria-describedby="help">
+					<label class="text-danger form-text error-label lscty-error" ></label>
 				</div>
 
 				<div class="mb-3 ">
 					<label for="fallbacksecurity" class="form-label">Fall Back Security</label>
 					<input type="text" class="form-control shadow-none" id="fallbacksecurity" name="fallbacksecurity" aria-describedby="help">
+					<label class="text-danger form-text error-label lfbck-error" ></label>
 				</div>
 			
 				
 		
-			<button type="submit" class="btn button-primary w-50" onclick="">Register</button>
+			<button type="submit" class="btn button-primary w-50" onclick="validateRegister(event)">Register</button>
 		
 		</form>
 	
@@ -87,6 +99,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+		<script src="/registrationValidation.js"></script>
 
 </body>
 </html>
