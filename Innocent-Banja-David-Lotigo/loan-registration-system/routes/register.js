@@ -30,15 +30,37 @@ function insertCustomer(req, res) {
     user.security       = req.body.security
     user.fullback       = req.body.fullback
 
+    req.checkBody('surname', 'surname required').notEmpty()
+    req.checkBody('givenname', 'given name  required').notEmpty()
+    req.checkBody('nin', 'nin should be a number').isNumber()
+    req.checkBody('date', 'date of birth required').notEmpty()
+    req.checkBody('occupation', 'occupation required').notEmpty()
+    req.checkBody('work', 'place of work required').notEmpty()
+    req.checkBody('gender', 'gender required').notEmpty()
+    req.checkBody('loan', 'loan is a number').isNumber()
+    req.checkBody('security', 'security required').notEmpty()
+    req.checkBody('fullback', 'full back security required').notEmpty()
+
+    let errors = req.validationError();
+    //if errors
+    if(errors){
+        res.render('/', {
+            errors: errors
+        })
+    } else {
+        
+    }
+
 
     //saving the date
     user.save((err) => {
         //checking for errors
         if(err){
+
             console.log(err)
             return
         } else {
-            
+            req.flash('success', 'User Registration Successful')
             res.redirect('/')
         }
     })

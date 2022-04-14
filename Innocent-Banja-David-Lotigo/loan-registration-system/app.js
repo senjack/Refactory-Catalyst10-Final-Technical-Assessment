@@ -4,6 +4,8 @@ const path = require('path')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const config = require('./config/database')
+const expressValidator = require('express-validator')
+const flash = require('connect-flash')
 
 //setting express to a variable app
 const app = express()
@@ -28,6 +30,29 @@ db.on('error', (err) => {
     console.log(err)
 })
 
+//express - messages
+app.use(require('connect-flash')())
+app.use((req, res, next) => {
+    res.locals.messages = require('express-messages')(req, res)
+    next()
+})
+//express - validator 
+app.use(expressValidator({
+  errorFormatter: function (param, msg, value) {
+    var namespace = param.split('.')
+      , root = namespace.shift()
+      , formParam = root;
+
+    while (namespace.length) {
+      formParam += '[' + namespace.shift() + ']';
+    }
+    return {
+      param: formParam,
+      msg: msg,
+      value: value
+    };
+  }
+}));
 
 //setting up routes
 const register = require('./routes/register')
