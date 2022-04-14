@@ -4,8 +4,6 @@ const occupationComp = /^[A-Za-z]{1,255}$/; //coccupation place of work
 const ninComp = /^[C][F|M]\d{7}[A-HJ-NP-Z]{2}\d{1}[A-HJ-NP-Z]{2}$/; //NIN
 const securityComp = /^[A-Za-z]{5,255}$/; //security
 
-
-const genderOption = document.register.genderoption;
 // Function to determine error message
 const errMessageProducer = (value, secondErrorMessage) => {
 	let errorMessage = ""
