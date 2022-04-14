@@ -1,0 +1,79 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        link(rel='stylesheet' href='CSS/style.css')
+        
+
+        title Customer Registration Form
+        
+
+    body 
+
+        main
+
+            .image 
+                img(src="Images/0_FornHeader.png", alt="")
+            .container
+                .title Loan Request Form 
+                .message
+                .content
+                    // ITEM REGISTRATION FORM
+                    form#form(action='/' method='POST' autocomplete='off')
+                        .user-details
+                            // first Name
+                            .input-box
+                                span.details Surname 
+                                input#surname(type='text', placeholder='Enter First Surname', required='', name='surname')
+                                // last name
+                            .input-box
+                                span.details Given Name
+                                input#givenname(type='text', placeholder='Enter Given Name', required='', name='givenname')
+                        .user-details
+                            // user NIN
+                            .input-box
+                                span.details NIN
+                                input#nin(type='text', placeholder='Enter NIN', required='', name='nin')
+                            // Date of birth
+                            .input-box
+                                span.details Date of Birth
+                                input#date(type='date', placeholder='Enter Date of Birth', required='', name='date')
+                        .user-details
+                            // Occupation
+                            .input-box
+                                span.details Occupation
+                                input#occupation(type='text', placeholder='Enter Occupation', required='', name='occupation')
+                            // Car Model
+                            .input-box
+                                span.details Place of Work
+                                input#work(type='text', placeholder='Enter Place of Work', required='', name='work')
+                        .user-details
+                            // Gender
+                            .input-box
+                                span.details Select Gender
+                                select(name='gender')
+                                    option(disabled selected) Select Gender
+                                    option(value='Male') Male
+                                    option(value='Female') Female
+                            .input-box
+                                span.details Loan Amount
+                                input#loan(type='text', placeholder='Enter Loan Account', required='', name='loan')
+                        .user-details
+                            // Car Model
+                            .input-box
+                                span.details Loan Security
+                                input(type='text', placeholder='Enter Loan Security', required='', name='security')
+                        
+                            .input-box
+                                span.details Full Back Security
+                                input#security(type='text', placeholder='Enter Full Back Security', required='', name='fullback')
+                        .user-details   
+                            .input-btn
+                                .buttons
+                                    input(type='submit' value='Register')
+                                
+                        
+
