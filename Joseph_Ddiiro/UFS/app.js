@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname,'views'));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use('/', LoginRoutes);
+// app.use('/', registerRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('This is an invalid URL')
