@@ -1,4 +1,5 @@
 const express = require('express')
+const { validate } = require('../models/user')
 const router = express.Router()
 
 //importing the model
@@ -30,26 +31,9 @@ function insertCustomer(req, res) {
     user.security       = req.body.security
     user.fullback       = req.body.fullback
 
-    req.checkBody('surname', 'surname required').notEmpty()
-    req.checkBody('givenname', 'given name  required').notEmpty()
-    req.checkBody('nin', 'nin should be a number').notEmpty()
-    req.checkBody('date', 'date of birth required').notEmpty()
-    req.checkBody('occupation', 'occupation required').notEmpty()
-    req.checkBody('work', 'place of work required').notEmpty()
-    req.checkBody('gender', 'gender required').notEmpty()
-    req.checkBody('loan', 'loan is a number').notEmpty()
-    req.checkBody('security', 'security required').notEmpty()
-    req.checkBody('fullback', 'full back security required').notEmpty()
+    
 
-    let errors = req.validationError();
-    //if errors
-    if(errors){
-        res.render('/', {
-            errors: errors
-        })
-    } else {
-
-         //saving the date
+    //saving the date
     user.save((err) => {
         //checking for errors
         if(err){
@@ -61,10 +45,49 @@ function insertCustomer(req, res) {
             res.redirect('/')
         }
     })
-
-    }
+  
 
 }
+
+function Validation() {
+    const form = document.getElementById('form')
+    const surname = document.getElementById('surname')
+    const givenname = document.getElementById('givenname')
+    const nin  = document.getElementById('nin')
+    const loan = document.getElementById('loan')
+
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+})
+//if error existts
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+
+
+
+}
+
+
+
+
 
 
 //exporting the route

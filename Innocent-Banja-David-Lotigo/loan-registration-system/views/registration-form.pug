@@ -6,7 +6,7 @@ html
         meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
         link(rel='stylesheet' href='CSS/style.css')
-        link(rel='stylesheet' href='bootstrap/dist/css/bootstrap.css')
+        
 
         title Customer Registration Form
         
@@ -22,34 +22,34 @@ html
                 .message
                 .content
                     // ITEM REGISTRATION FORM
-                    form(action='/' method='POST' autocomplete='off')
+                    form#form(action='/' method='POST' autocomplete='off')
                         .user-details
                             // first Name
                             .input-box
                                 span.details Surname 
-                                input(type='text', placeholder='Enter First Surname', required='', name='surname')
+                                input#surname(type='text', placeholder='Enter First Surname', required='', name='surname')
                                 // last name
                             .input-box
                                 span.details Given Name
-                                input(type='text', placeholder='Enter Given Name', required='', name='givenname')
+                                input#givenname(type='text', placeholder='Enter Given Name', required='', name='givenname')
                         .user-details
                             // user NIN
                             .input-box
                                 span.details NIN
-                                input(type='text', placeholder='Enter NIN', required='', name='nin')
+                                input#nin(type='text', placeholder='Enter NIN', required='', name='nin')
                             // Date of birth
                             .input-box
                                 span.details Date of Birth
-                                input(type='date', placeholder='Enter Date of Birth', required='', name='date')
+                                input#date(type='date', placeholder='Enter Date of Birth', required='', name='date')
                         .user-details
                             // Occupation
                             .input-box
                                 span.details Occupation
-                                input(type='text', placeholder='Enter Occupation', required='', name='occupation')
+                                input#occupation(type='text', placeholder='Enter Occupation', required='', name='occupation')
                             // Car Model
                             .input-box
                                 span.details Place of Work
-                                input(type='text', placeholder='Enter Place of Work', required='', name='work')
+                                input#work(type='text', placeholder='Enter Place of Work', required='', name='work')
                         .user-details
                             // Gender
                             .input-box
@@ -60,7 +60,7 @@ html
                                     option(value='Female') Female
                             .input-box
                                 span.details Loan Amount
-                                input(type='text', placeholder='Enter Loan Account', required='', name='loan')
+                                input#loan(type='text', placeholder='Enter Loan Account', required='', name='loan')
                         .user-details
                             // Car Model
                             .input-box
@@ -69,7 +69,7 @@ html
                         
                             .input-box
                                 span.details Full Back Security
-                                input(type='text', placeholder='Enter Full Back Security', required='', name='fullback')
+                                input#security(type='text', placeholder='Enter Full Back Security', required='', name='fullback')
                         .user-details   
                             .input-btn
                                 .buttons

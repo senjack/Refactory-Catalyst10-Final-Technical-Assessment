@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const config = require('./config/database')
 const expressValidator = require('express-validator')
 const flash = require('connect-flash')
+const session = require('express-session')
 
 //setting express to a variable app
 const app = express()
@@ -29,6 +30,13 @@ db.once('open', () => {
 db.on('error', (err) => {
     console.log(err)
 })
+
+//express - session
+app.use(session({
+    secret: 'dkfa;sdklfja',
+    resave: true,
+    saveUninitialized: true,
+}))
 
 //express - messages
 app.use(require('connect-flash')())
