@@ -11,8 +11,8 @@ router.post("/register", async (req, res) => {
     const { error } = registerSchema.validate(req.body);
     if (error) return res.status(400).send({message:error.details[0].message});
   
-    //Check if the user is already in the db using the nin number as the unique identifer
-    const clientExists = await Client.findOne({dateOfBirth:req.body.dateOfBirth});
+    //Check if the user is already in the db using the date of birth as the unique identifer
+    const clientExists = await Client.findOne(req.body.dateOfBirth);
   
     if (clientExists) return res.status(400).send({meaasge:"User has already registered for this service"});
   
