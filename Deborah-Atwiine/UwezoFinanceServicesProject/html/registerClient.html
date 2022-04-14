@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Client</title>
+    <link rel="stylesheet" href="/public/debbie.css">
+    <link rel="stylesheet" href="/public/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bstyle">
+
+    <div class="container">
+        <form action="/register" method="post">
+            <div class="row">
+                <div class="col-3"></div>
+
+                <div class="col-6 main">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="/public/images/0_FornHeader.png" alt="" width="550px">
+                            <h2 class="c-header">Loan Request Form</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="Surname"><b>Surname</b></label>
+                            <input type="text" class="form-control" id="Surname" name="surname"
+                                placeholder="Please enter your surname" autofocus>
+                        </div>
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="email"><b>Given Name</b></label>
+                            <input type="text" class="form-control" id="Name" name="name"
+                                placeholder="Enter your given name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="nin"><b>NIN</b></label>
+                            <input type="text" class="form-control" id="Nin" name="nin"
+                                placeholder="Please enter your NIN">
+                        </div>
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="dob"><b>Date Of Birth</b></label>
+                            <input type="date" class="form-control" id="Date" name="date"
+                                placeholder="Enter your date of Birth">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="occupation"><b>Occupation</b></label>
+                            <input type="text" class="form-control" id="Occupation" name="occupation"
+                                placeholder="Please enter your Occupation">
+                        </div>
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="pob"><b>Place of Work</b></label>
+                            <input type="text" class="form-control" id="Pow" name="pow"
+                                placeholder="Enter your place of Work">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">                          
+                                <label for="gender" class="col-sm-3 control-label"><b>Gender</b></label>
+                                <!-- <div class="col-sm-9"> -->
+                                    <select class="form-control" name="gender" id="Gender">
+                                    <option value="Default" selected="">-- Select Gender --</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                <!-- </div> -->
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="loan">Loan Amount</label>
+                            <input type="text" class="form-control" id="Loan" name="loan"
+                                placeholder="Enter Loan Amount">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="loansecurity"><b>Loan Security</b></label>
+                            <input type="text" class="form-control" id="Loansecurity" name="loansecurity"
+                                placeholder="Enter your loan Security">
+                        </div>
+                        <div class="form-group col-md-6 text-blue">
+                            <label for="fsecurity"><b>Fall Back Security</b></label>
+                            <input type="text" class="form-control" id="Fsecurity" name="fsecurity"
+                                placeholder="Enter your Fall Back Security">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-3"></div>
+            
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
