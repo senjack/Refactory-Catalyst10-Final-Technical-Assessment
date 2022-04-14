@@ -1,0 +1,21 @@
+{
+  "name": "ufs",
+  "version": "1.0.0",
+  "description": "A system to help with issuing loans to clients during covid",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "Ddiiro Joseph",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.3",
+    "express-sessions": "^1.0.6",
+    "joi": "^17.6.0",
+    "mongoose": "^6.2.11",
+    "nodemon": "^2.0.15",
+    "parser": "^0.1.4",
+    "pug": "^3.0.2"
+  }
+}
