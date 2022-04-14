@@ -1,0 +1,28 @@
+{
+  "name": "uwezo_finance_services",
+  "version": "1.0.0",
+  "description": "Final Assessement",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KylieNamugga/Refactory-Catalyst10-Final-Technical-Assessment"
+  },
+  "author": "Kylie Namugga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KylieNamugga/Refactory-Catalyst10-Final-Technical-Assessment"
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "express-validator": "^5.3.0",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}
