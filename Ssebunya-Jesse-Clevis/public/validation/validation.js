@@ -167,7 +167,7 @@ function placeofwork_verify(){
        }
 }
 function placeofwork_verify(){
-    if(placeofwork.value !='' && placeofwork.value.match(alphaNumeric)){
+    if(placeofwork.value !='' && placeofwork.value.match(alphabets)){
         placeofworkError.innerHTML = '';
         return true;
     }
@@ -178,6 +178,34 @@ function placeofwork_verify(){
         return false;
        }
 }
+
+function loanamount_verify(){
+    if(loanamount.value !='' && loanamount.value.match(alphabets)){
+        loanamountError.innerHTML = '';
+        return true;
+    }
+    else{
+
+        placeofworkError.textContent = 'date of birth should be a string'
+        placeofwork.focus();
+        return false;
+       }
+}
+function loanamount_verify(){
+
+}
+
+
+//regular functions
+const numbers = /^\d+$/;
+const alphabets = /^[a-zA-Z]+$/;
+const nameRegex = /^.{1,20}[a-zA-Z]+$/; 
+const alphaNumeric = /^[0-9a-zA-Z]+$/; 
+const ninRegex = /^[0-9a-zA-Z]{13}$/; 
+const emailRegex = "^(.+)@(.+)$";
+const date = "^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$"
+const time =  /^(?:[01][0-9]|2[0-3]):[0-5][0-9](?::[0-5][0-9])?$/;
+// const date2 = /^(((0[1-9]|[12][0-9]|30)[-/]?(0[13-9]|1[012])|31[-/]?(0[13578]|1[02])|(0[1-9]|1[0-9]|2[0-8])[-/]?02)[-/]?[0-9]{4}|29[-/]?02[-/]?([0-9]{2}(([2468][048]|[02468][48])|[13579][26])|([13579][26]|[02468][048]|0[0-9]|1[0-6])00))$/;
 
 
 
