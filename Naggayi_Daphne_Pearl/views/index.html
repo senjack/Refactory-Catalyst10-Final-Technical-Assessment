@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Registration Form</title>
+    <link rel="stylesheet" href="/Naggayi_Daphne_Pearl/public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/Naggayi_Daphne_Pearl/public/Css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="/0_FornHeader.png" alt="">
+        </div>
+        <h2>Loan Request Form</h2>
+        <form action="#" name="register" onsubmit="registerValidate()">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <!--surname-->
+                    <span class="details">Surname</span>
+                    <input type="text" name="surname">
+                </div>
+                <div class="text-danger font-weight-bold small" id="surname"></div>
+
+                <div class="input-box">
+                    <!--given nam-->
+                    <span class="details">Given Name</span>
+                    <input type="text" name="givename">
+                </div>
+                 <!--error-->
+                <div class="text-danger font-weight-bold small" id="givename"></div>
+
+                <div class="input-box">
+                    <!--NIN-->
+                    <span class="details">NIN</span>
+                    <input type="text" name="nin">
+                </div>
+                <!--error-->
+                <div class="text-danger font-weight-bold small" id="nin"></div>
+
+                <div class="input-box">
+                    <!--Date of birth-->
+                    <span class="details">Date of Birth</span>
+                    <input type="datetime-local" name="dob">
+                </div>
+                <!--error-->
+                <div class="text-danger font-weight-bold small" id="dob"></div>
+
+                <div class="input-box">
+                    <!--Occupation-->
+                    <span class="details">Occupation</span>
+                    <input type="text" name="occupation">
+                </div>
+                <!--error-->
+                <div class="text-danger font-weight-bold small" id="occupation"></div>
+
+                <div class="input-box">
+                    <!--Place of work-->
+                    <span class="details">Place of work</span>
+                    <input type="text" name="placeofwork">
+                </div>
+                 <!--error-->
+                 <div class="text-danger font-weight-bold small" id="placeofwork"></div>
+
+
+                <div class="input-box">
+                    <!--Gender-->
+                    <span class="details">Gender</span>
+                    <select name="gender" id="gender">
+                        <option selected>Gender</option>
+                        <option value="female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+                </div>
+                <!--error-->
+                <div class="text-danger font-weight-bold small" id="gender"></div>
+
+
+                <div class="input-box">
+                    <!--Loan Amount-->
+                    <span class="details">Loan Amount</span>
+                    <input type="number" name="loanamount">
+                </div>
+                 <!--error-->
+                 <div class="text-danger font-weight-bold small" id="loanamount"></div>
+
+                <div class="input-box">
+                    <!--Loan Security-->
+                    <span class="details">Loan Security</span>
+                    <input type="text" name="loansecurity">
+                </div>
+                 <!--error-->
+                 <div class="text-danger font-weight-bold small" id="loansecurity"></div>
+
+                <div class="input-box">
+                    <!--Fall Back Security-->
+                    <span class="details">Fall Back Security</span>
+                    <input type="text" name="fallback">
+                </div>
+                  <!--error-->
+                  <div class="text-danger font-weight-bold small" id="fallback"></div>
+            </div>
+            <button value="submit">REGISTER</button>           
+              
+        </form>
+    </div>
+   <script src="/Naggayi_Daphne_Pearl/public/bootstrap-5.1.3-dist/js/bootstrap.js"></script> 
+   <script src="/Naggayi_Daphne_Pearl/public/validations/index.js"></script>
+</body>
+</html>
