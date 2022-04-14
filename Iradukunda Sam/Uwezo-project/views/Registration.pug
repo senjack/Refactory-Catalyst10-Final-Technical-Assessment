@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Loan Registration form
+  link(rel='stylesheet' href='')
+  link(rel='stylesheet' href='Registration.css')
+form.container(action='/register')
+  .header
+    h1 Uwezo Financial Services
+  h2 Loan Registration Form
+  form(action='')
+  .username
+    label(for='surname') Surname:
+    input#surname(type='text' name='surname')
+    label(for='gname') Given Name:
+    input#gname(type='text' name='gname')
+  .inputs
+    label(for='nin') NIN:
+    input#nin(type='alphanumeric characters' name='nin')
+    label(for='date of birth') Date of Birth:
+    input(type='date' name='date of birth' id='date of birth')
+  .inputs
+    label(for='ocupation') Occupation:
+    input#occupation(type='text' name='occupation')
+    label(for='place of work') Place of Work:
+    input(type='text' name='place of birth' id='place of birth')
+  .form-row
+    .col-sm-6
+      label(for='gender') Gender:
+      input#gender(type='gender' name='gender')
+    .col-sm-6 
+    label(for='lamount') Loan Amount:
+    input#lamount(type='currency' name='lamount')
+  .inputs
+    label(for='lsecurity') Loan Security:
+    input#lsecurity(type='text' name='lsecurity')
+    label(for='fbsecurity') Fall Back Security:
+    input#fbsecurity(type='text' name='fbsecurity')
+  
