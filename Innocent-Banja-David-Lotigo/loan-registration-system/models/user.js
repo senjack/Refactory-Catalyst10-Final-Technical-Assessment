@@ -4,17 +4,16 @@ const mongoose = require('mongoose')
 //defining the schema
 let tireSchema = mongoose.Schema({
     //fields to insert
-    surname         :{ type:String, required: true },
+    surname         :{ type: String, required: true },
     givenname       :{ type: String, required: true },
-    telephone       :{ type: String, required: true },
-    platenumber     :{ type: String, required: true },
-    carmodel        :{ type: String, required: true },
-    checkintime     :{ type: Date, required: true },
-    tirefault       :{ type: String, required: true},
-    repairstatus    :{ type: String, required: false },
-    cost            :{ type: Number, required: true },
-    mechanic        :{ type: String, required: true},
-    checkouttime    :{ type: Date, required: false}
+    nin             :{ type: Number, required: true },
+    date            :{ type: Date, required: true },
+    occupation      :{ type: String, required: true },
+    work            :{ type: String, required: true},
+    gender          :{ type: String, required: false },
+    loan            :{ type: Number, required: true },
+    security        :{ type: String, required: true},
+    fullback        :{ type: String, required: false}
 })
 
 //exporting the module

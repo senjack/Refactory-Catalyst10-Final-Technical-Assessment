@@ -21,7 +21,7 @@ html
                 .message
                 .content
                     // ITEM REGISTRATION FORM
-                    form(action='/new-customer' method='POST' autocomplete='off')
+                    form(action='/' method='POST' autocomplete='off')
                         .user-details
                             // first Name
                             .input-box
@@ -35,7 +35,7 @@ html
                             // user NIN
                             .input-box
                                 span.details NIN
-                                input(type='email', placeholder='Enter NIN', required='', name='nin')
+                                input(type='text', placeholder='Enter NIN', required='', name='nin')
                             // Date of birth
                             .input-box
                                 span.details Date of Birth
@@ -53,7 +53,7 @@ html
                             // Gender
                             .input-box
                                 span.details Select Gender
-                                select(name='duration')
+                                select(name='gender')
                                     option(disabled selected) Select Gender
                                     option(value='Male') Male
                                     option(value='Female') Female

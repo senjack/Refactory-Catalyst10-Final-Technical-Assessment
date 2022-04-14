@@ -77,6 +77,7 @@ form .user-details .input-btn .buttons input{
     background-color: rgb(31, 78, 121);
     width: 13.5rem;
     height: 2rem;
+    border-radius: .2rem;
 }
 form .input-box span.details{
   display: block;
