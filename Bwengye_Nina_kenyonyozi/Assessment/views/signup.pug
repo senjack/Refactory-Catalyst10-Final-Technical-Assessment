@@ -1,0 +1,61 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/bootstrap-5.1.3-dist copy/css/bootstrap.css')
+  link(rel='stylesheet' href='/index.css')
+  script(src='/Validation.js')
+  title Document
+.content
+  div
+    img(src='img/0_FornHeader.png' alt='')
+  .header
+    h1
+      | Loan Request Form
+  form.row.g-3.form-one(name='register' method='POST' action='/signup' onsubmit='return Form();')
+    .col-md-6
+      label.form-label(for='inputSurname') Surname
+      input#inputSurname.form-control(type='text' name='surname')
+      span#userError
+    .col-md-6
+      label.form-label(for='inputGivenname') Given Name
+      input#inputGivenname.form-control(type='text' name='givenname')
+      span#givenError
+    .col-6
+      label.form-label(for='inputNin') Nin
+      input#inputNin.form-control(type='text' name='nin')
+      span#ninError
+    .col-6
+      label.form-label(for='inputDate') Date Of Birth
+      input#inputDate.form-control(type='date' name='date')
+      span#dateError
+    .col-md-6
+      label.form-label(for='inputOccupation') Occupation
+      input#inputOccupation.form-control(type='text' name='occupation')
+      span#occupationError
+    .col-md-6
+      label.form-label(for='inputWork') Place Of Work
+      input#inputWork.form-control(type='text' name='work')
+      span#workError
+    .col-md-6
+      label.form-label(for='inputgender') Gender
+      select#inputgender.form-select(type='text' name="gender")
+        option(value='Default' selected='') Choose Gender
+        option Male
+        option Female
+      span#genderError
+    .col-md-6
+      label.form-label(for='inputLoanamount') Loan Amount
+      input#inputLoanamount.form-control(type='number' name='loanamount')
+      span#loanamountError
+    .col-md-6
+      label.form-label(for='inputLoansecurity') Loan Security
+      input#inputLoansecurity.form-control(type='text' name='loansecurity')
+      span#loansecurityError
+    .col-md-6
+      label.form-label(for='inputFallback') Fall Back Security
+      input#inputFallback.form-control(type='text' name='fallback')
+      span#fallbackError
+    .col-12
+      button.btn.btn-primary(type='submit') Register
