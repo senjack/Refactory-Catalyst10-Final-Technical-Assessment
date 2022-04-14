@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./index.css">
+ <title>loan register</title>
+</head>
+<body>
+ <div class="container">
+  <div class="header"><img src="./0_FornHeader.png" alt="header"></div>
+  <h1>Loan Request Form</h1>
+  <div class="content">
+   <form action="" method="post">
+    <div class="split">
+     <div class="form-control">
+      <label for="surname">surname</label>
+      <input type="text" name="surName" id="surname">
+      <small></small>
+     </div>
+     <div class="form-control">
+      <label for="givenname">Given name</label>
+      <input type="text" name="givenName" id="givenname">
+      <small></small>
+     </div>
+    </div>
+    <div class="split">
+     <div class="form-control">
+      <label for="nin">NIN</label>
+      <input type="text" name="nin" id="nin">
+      <small></small>
+     </div>
+     <div class="form-control">
+      <label for="dob">date of birth</label>
+      <input type="datetime-local" name="dob" id="dob">
+      <small></small>
+     </div>
+    </div>
+    <div class="split">
+     <div class="form-control">
+      <label for="occupation">occupation</label>
+      <input type="text" name="occupation" id="occupation">
+      <small></small>
+     </div>
+     <div class="form-control">
+      <label for="work">place of work</label>
+      <input type="text" name="work" id="work">
+      <small></small>
+     </div>
+    </div>
+    <div class="split">
+     <div class="form-control">
+      <label for="gender">gender</label>
+      <select name="gender" id="gender">
+       <option value=""></option>
+       <option value="female">female</option>
+       <option value="male">male</option>
+      </select>
+      <small></small>
+     </div>
+     <div class="form-control">
+      <label for="amount">loan amount</label>
+      <input type="number" name="loanAmount" id="amount">
+      <small></small>
+     </div>
+    </div>
+    <div class="split">
+     <div class="form-control">
+      <label for="loanSecurity">loan security</label>
+      <input type="text" name="loanSecurity" id="loanSecurity">
+      <small></small>
+     </div>
+     <div class="form-control">
+      <label for="fbSecurity">fall back security</label>
+      <input type="text" name="fbSecurity" id="fbSecurity">
+      <small></small>
+     </div>
+    </div>
+    <button type="submit" class="btn">Register</button>
+   </form>
+  </div>
+ </div>
+ <script src="./validations.js"></script>
+</body>
+</html>
