@@ -206,7 +206,7 @@ const validateFallBackSecurity = () => {
 // The validation function
 
 const validateRegister = (e) => {
-	if(!alidateSurName()) {
+	if(!validateSurName()) {
 		e.preventDefault();
 		return
 	}
