@@ -1,0 +1,17 @@
+
+
+.fill img {
+   
+    margin: 20px;
+}
+
+.col-md-6 {
+    font-size: 40px;
+    color: #1f4e79;
+}
+
+.btn-primary {
+    float: right;
+    width: 90px;
+    height: 40px;
+}  
