@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Register Client
+    link(rel="stylesheet", href="/debbie.css")
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+  body.bstyle
+    .container
+      form(action="/register", method="post" onsubmit='return validationForm()')
+        .row
+          .col-3
+          .col-6.main
+            .row
+              .col-12
+                img(src="/images/0_FornHeader.png", alt="header-image", width="550px")
+                h2.c-header Loan Request Form
+            .row
+              .form-group.col-md-6.text-blue
+                label(for="Surname")
+                  b Surname
+                input#Surname.form-control(type="text", name="surname", placeholder="Please enter your surname", autofocus)
+                span#SurnameError
+              .form-group.col-md-6.text-blue
+                label(for="givenname")
+                  b Given Name
+                input#Givenname.form-control(type="text", name="givenname", placeholder="Enter your given name")
+                span#GivennameError
+            .row
+              .form-group.col-md-6.text-blue
+                label(for="nin")
+                  b NIN
+                input#Nin.form-control(type="text", name="nin", placeholder="Please enter your NIN")
+                span#NinError
+              .form-group.col-md-6.text-blue
+                label(for="dob")
+                  b Date Of Birth
+                input#Date.form-control(type="date", name="date", placeholder="Enter your date of Birth")
+                span#DateError
+            .row
+              .form-group.col-md-6.text-blue
+                label(for="occupation")
+                  b Occupation
+                input#Occupation.form-control(type="text", name="occupation", placeholder="Please enter your Occupation")
+                span#OccupationError
+              .form-group.col-md-6.text-blue
+                label(for="pwork")
+                  b Place of Work
+                input#Pwork.form-control(type="text", name="pwork", placeholder="Enter your place of Work")
+                span#PworkError
+            .row
+              .form-group.col-md-6
+                label.col-sm-3.control-label(for="gender")
+                  b Gender
+                // <div class="col-sm-9">
+                select#Gender.form-control(name="gender")
+                  option(value="Default", selected="") -- Select Gender --
+                  option(value="male") Male
+                  option(value="female") Female
+                // </div>
+                span#GenderError
+              .form-group.col-md-6
+                label(for="loan") Loan Amount
+                input#Loan.form-control(type="text", name="loan", placeholder="Enter Loan Amount")
+                span#LoanError
+            .row
+              .form-group.col-md-6.text-blue
+                label(for="lsecurity")
+                  b Loan Security
+                input#Lsecurity.form-control(type="text", name="lsecurity", placeholder="Enter your loan Security")
+                span#LsecurityError
+              .form-group.col-md-6.text-blue
+                label(for="fsecurity")
+                  b Fall Back Security
+                input#Fsecurity.form-control(type="text", name="fsecurity", placeholder="Enter your Fall Back Security")
+                span#FsecurityError
+            .row
+              .col-md-6
+              .col-md-6
+                br
+                button.btn.btn-primary(type="submit") Register
+          .col-3
+  script(src='/bootstrap/js/bootstrap.min.js')
+  script(src='/validations/regClientV.js')
