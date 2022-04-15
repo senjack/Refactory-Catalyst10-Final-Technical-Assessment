@@ -1,0 +1,25 @@
+.body{
+align-items: center;
+
+}
+input{
+    margin: 1em 0em;
+    padding: 1em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    max-width:0fr
+    
+}
+.username{
+    width:fit-content;
+
+}
+h1,h2{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h1{
+    color: whitesmoke;
+    font-display:inherit ;
+}
