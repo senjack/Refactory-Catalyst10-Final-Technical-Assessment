@@ -1,0 +1,65 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width,initial-scale=1')
+  link(rel='stylesheet' type='text/css' href='/css/register.css')
+  title Application form
+// <div id="error"></div>
+.center
+  h1 Registration Form
+  form#form(name='entryForm' action='/signup' method='POST' onsubmit='return validate()')
+    .txt-field
+      input#username(type='text' name='username' placeholder='Enter Username')
+      span
+      label#label-username(for='username') Username:
+      #susername.text-danger
+    .txt-field
+      input#firstname(type='text' name='firstname' placeholder='Enter First Name')
+      span
+      label#label-firstname(for='firstname') First Name:
+      #fname.text-danger
+    .txt-field
+      input#lastname(type='text' name='lastname' placeholder='Enter Last Name')
+      span
+      label#label-lastname(for='lastname') Last Name:
+      #lname.text-danger
+    .txt-field
+      input#email(type='text' name='email' placeholder='Enter Email Address')
+      span
+      label#label-email(for='email') E-mail:
+      #semail.text-danger
+    .gender
+      label#label-gender(for="gender") Gender:
+      br
+      input(type="radio", name="gender", value="male", checked)
+      |  Male
+      div
+      input(type="radio", name="gender", value="female")
+      |  Female
+
+      span
+    .txt-field
+      input#phonenumber(type='text' name='phonenumber' placeholder='Enter Number')
+      span
+      label#label-phonenumber(for='phonenumber') Phone Number:
+      #sphonenumber.text-danger
+    .txt-field
+      input#password(type='password' name='password' placeholder='Enter Password')
+      span
+      label#label-password(for='password') Password:
+      #spassword.text-danger
+    .txt-field
+      input#password(type='password' name='confirmpassword' placeholder='Confirm Password')
+      span
+      label#label-password(for='confirmpassword') Confirm Password:
+      #cpassword.text-danger
+    .submit
+      input(type='submit' name='submit')
+    p
+      | Already have an account? 
+      a(href='#') Sign In
+      | .  in
+script(src="/validation/signupValidate.js").
+  
+  
