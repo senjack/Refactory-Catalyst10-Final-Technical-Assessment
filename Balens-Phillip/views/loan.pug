@@ -1,0 +1,57 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="preconnect", href="https://fonts.googleapis.com")
+link(rel="stylesheet", type="text/css", href="/css/loancss.css")
+title Loan Request Form
+.container
+  .header
+    img(src="/0_FornHeader.png", alt)
+  .title Loan Request Form
+  form#form(action="/loan", name="entryForm", method="POST", onsubmit="return validate()")
+    .user-details
+      .input-box
+        span.details(name="surname") Surname
+        input(type="text", placeholder)
+        .text-danger#lsurname
+      .input-box
+        span.details(name="givenname") Given name
+        input(type="text", placeholder)
+        .text-danger#lgivenname
+      .input-box
+        span.details(name="nin") NIN
+        input(type="text", placeholder)
+        .text-danger#lnin
+      .input-box
+        span.details(name="dateofbirth") Date of Birth
+        input(type="text", placeholder="YY/MM/DD")
+        .text-danger#ldateofbirth
+      .input-box
+        span.details(name="occupation") Occupation
+        input(type="text", placeholder)
+        .text-danger#loccupation
+      .input-box
+        span.details(name="placeofwork") Place of work
+        input(type="text", placeholder)
+        .text-danger#lplaceofwork
+      .input-box
+        span.details(name="gender") Gender
+        select#select(name="category")
+          option(value="default", selected) --Select Gender--
+          option(value) Male
+          option(value) Female
+      .input-box
+        span.details(name="loanamount") Loan Amount
+        input(type="number", placeholder)
+        .text-danger#lloanamount
+      .input-box
+        span.details(name="loansecurity") Loan Security
+        input(type="text", placeholder)
+        .text-danger#lloansecurity
+      .input-box
+        span.details(name="fallbacksecurity") Fall Back Security
+        input(type="text", placeholder)
+        .text-danger#lfallbacksecurity
+    .button
+      input(type="submit", value="Register")
+script(src="/validation/loanvalidation.js")
