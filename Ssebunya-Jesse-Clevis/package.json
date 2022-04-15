@@ -1,0 +1,22 @@
+{
+  "name": "ssebunya-jesse-clevis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "Ssebunya Jesse",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "express-validator": "^5.3.1",
+    "mongoose": "^6.2.11",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "pug": "^3.0.2"
+  }
+}
