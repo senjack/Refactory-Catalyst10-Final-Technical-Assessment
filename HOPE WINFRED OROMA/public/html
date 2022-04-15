@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+</head> 
+<body>
+    
+    <div class="container">
+        <div class="title">Uwezo Financial Services</div>
+        <div class="content">
+         <form action="">Loan Request Form</form>
+            <p>registration was successfull!</p>
+            <form action="">
+                <div class="user-details">
+                    
+                    <div class="input-box">
+                        <span class="details">Surname</span>
+                        <input type="text" placeholder="Surname" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Given name</span>
+                        <input type="text" placeholder="Enter given name" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">occupation</span>
+                        <input type="occupation" placeholder="Enter occupation" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">gender</span>
+                        <input type="text" placeholder="Enter gender" required>
+                        </div>
+                    <div class="input-box">
+                      <span class="details">Nin number</span>
+                      <input type="Nin number" placeholder="Enter Nin number" required>
+                  </div>
+                
+                     <div class="input-box">
+                        <span class="details">Place of work</span>
+                        <input type="place of work" placeholder="place of work" required>
+                    </div>
+                    
+                     <div class="input-box">
+                        <span class="details">Date of birth</span>
+                        <input type="text" placeholder="Enter date of birth" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Loan Amount</span>
+                        <input type="text" placeholder="Enter Loan Amount" required>
+                    </div>
+                    
+                    
+                        <div class="input-box">
+                            <span class="details">Loan security</span>
+                            <input type="loansecurity" placeholder="Enter loan security" required>
+                        </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Fall Back security</span>
+                        <input type="text" placeholder="Enter fall back security" required>
+                    </div>
+                    
+
+                <div class="input-box">
+                        <div class="buttons">
+                            <input type="submit" value="Register">
+                        </div>
+                </div>
+          </div>
+          
+                
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

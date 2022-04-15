@@ -1,0 +1,173 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='index.css')
+  | @import url(&apos;https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap&apos;);
+| *{
+| margin: 0;
+| padding: 0;
+| box-sizing: border-box;
+| font-family: &apos;Poppins&apos;,sans-serif;
+| }
+| body{
+| display: flex;
+| overflow: hidden;
+| justify-content: center;
+| align-items: center;
+| margin-top: 40px 0 40px 0;
+| padding: 10px;
+| background: linear-gradient(135deg,grey, blue);
+| }
+| .container{
+| max-width: 700px;
+| width: 100%;
+| background-color:whitesmoke;
+| padding: 25px 30px;
+| border-radius: 5px;
+| box-shadow: 0 5px 10px blue,(0,0,0,0.15);
+| }
+| .container .title{
+| font-size: 25px;
+| font-weight: 500;
+| position: relative;
+| }
+| .container .title::before{
+| content: &quot;&quot;;
+| position: absolute;
+| left: 0;
+| bottom: 0;
+| height: 3px;
+| width: 30px;
+| border-radius: 5px;
+| background: linear-gradient(135deg,blue,blue);
+| }
+| .content form .user-details{
+| display: flex;
+| flex-wrap: wrap;
+| justify-content: space-between;
+| margin: 15px 0 12px 0;
+| }
+| form .user-details .input-box{
+| margin-bottom: 10px;
+| width: calc(100% / 2 - 20px);
+| }
+| form .input-box span.details{
+| display: block;
+| font-weight: 500;
+| margin-bottom: 5px;
+| }
+| .user-details .input-box input{
+| height: 45px;
+| width: 100%;
+| outline: none;
+| font-size: 16px;
+| border-radius: 5px;
+| padding-left: 15px;
+| border: 1px solid #7d7c7e;
+| border-bottom-width: 2px;
+| transition: all 0.3s ease;
+| }
+| .user-details .input-box select{
+| height: 40px;
+| width: 100%;
+| outline: none;
+| text-align: center;
+| font-size: 16px;
+| border-radius: 5px;
+| padding-left: 15px;
+| border: 1px solid gray;
+| border-bottom-width: 2px;
+| transition: all 0.3s ease;
+| }
+| .user-details .input-box input:focus,
+| .user-details .input-box input:valid{
+| border-color: grey;
+| }
+| form .input-box .buttons{
+| height: 40px;
+| }
+| form .input-box .buttons input{
+| height: 100%;
+| width: 100%;
+| border-radius: 5px;
+| border: none;
+| color:blue(197, 27, 27);
+| font-size: 18px;
+| font-weight: 500;
+| letter-spacing: 1px;
+| cursor: pointer;
+| transition: all 0.3s ease;
+| background: linear-gradient(135deg, blue,blue);
+| }
+| form .button input:hover{
+| /* transform: scale(0.99); */
+| background: linear-gradient(-135deg blue, blue);
+| }
+| @media(max-width: 584px){
+| .container{
+| max-width: 100%;
+| }
+| form .user-details .input-box{
+| margin-bottom: 15px;
+| width: 100%;
+| }
+| form .category{
+| width: 100%;
+| }
+| .content form .user-details{
+| max-height: 300px;
+| overflow-y: scroll;
+| }
+| .user-details::-webkit-scrollbar{
+| width: 5px;
+| }
+| }
+| @media(max-width: 459px){
+| .container .content .category{
+| flex-direction: column;
+| }
+| }
+
+.container
+  .title Uwezo Financial Services
+  .content
+    form(action='') Loan Request Form
+    p registration was successfull!
+    form(method="POST" action='/register')
+      .user-details
+        .input-box
+          span.details Surname
+          input(type='text' placeholder='Surname' required='')
+        .input-box
+          span.details Given name
+          input(type='text' placeholder='Enter given name' required='')
+        .input-box
+          span.details occupation
+          input(type='occupation' placeholder='Enter occupation' required='')
+        .input-box
+          span.details gender
+          input(type='text' placeholder='Enter gender' required='')
+        .input-box
+          span.details Nin number
+          input(type='Nin number' placeholder='Enter Nin number' required='')
+        .input-box
+          span.details Place of work
+          input(type='place of work' placeholder='place of work' required='')
+        .input-box
+          span.details Date of birth
+          input(type='date' placeholder='Enter date of birth' required='')
+        .input-box
+          span.details Loan Amount
+          input(type='text' placeholder='Enter Loan Amount' required='')
+        .input-box
+          span.details Loan security
+          input(type='loansecurity' placeholder='Enter loan security' required='')
+        .input-box
+          span.details Fall Back security
+          input(type='text' placeholder='Enter fall back security' required='')
+        .input-box
+          .buttons
+            input(type='submit' value='Register'
+          
