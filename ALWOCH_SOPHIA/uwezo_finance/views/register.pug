@@ -1,0 +1,63 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='./index.css')
+  title loan register
+.container
+  .header
+    img(src='./0_FornHeader.png' alt='header')
+  h1 Loan Request Form
+  .content
+    form(action='' method='post')
+      .split
+        .form-control
+          label(for='surname') surname
+          input#surname(type='text' name='surName')
+          small
+        .form-control
+          label(for='givenname') Given name
+          input#givenname(type='text' name='givenName')
+          small
+      .split
+        .form-control
+          label(for='nin') NIN
+          input#nin(type='text' name='nin')
+          small
+        .form-control
+          label(for='dob') date of birth
+          input#dob(type='datetime-local' name='dob')
+          small
+      .split
+        .form-control
+          label(for='occupation') occupation
+          input#occupation(type='text' name='occupation')
+          small
+        .form-control
+          label(for='work') place of work
+          input#work(type='text' name='work')
+          small
+      .split
+        .form-control
+          label(for='gender') gender
+          select#gender(name='gender')
+            option(value='')
+            option(value='female') female
+            option(value='male') male
+          small
+        .form-control
+          label(for='amount') loan amount
+          input#amount(type='number' name='loanAmount')
+          small
+      .split
+        .form-control
+          label(for='loanSecurity') loan security
+          input#loanSecurity(type='text' name='loanSecurity')
+          small
+        .form-control
+          label(for='fbSecurity') fall back security
+          input#fbSecurity(type='text' name='fbSecurity')
+          small
+      button.btn(type='submit') Register
+
