@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 // const bodyParser = require('body-parser');
 // const expressValidator = require('express-validator');
 // const flash = require('connect-flash');
-const Registration = require('Registration')
+// const Registration = require('Registration')
 // const session = require('express-session');
 // const passport = require('passport');
 // we are qualifying config to be a package but config package is
@@ -18,7 +18,7 @@ const config = require('./config/database');
 // route section (these are controllers)
 // let loginRoutes = require('./routes/')
 // const mgtEntryRoutes = require('./routes/')
-// const registrationRoutes = require('./routes/register')
+const registrationRoutes = require('./routes/register')
 
 const app = express();
 //creating a connection to the mongo database from the 

@@ -1,0 +1,19 @@
+{
+  "name": "refactory-catalyst10-final-technical-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolments/Refactory-Catalyst10-Final-Technical-Assessment.git"
+  },
+  "author": "Carol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carolments/Refactory-Catalyst10-Final-Technical-Assessment/issues"
+  },
+  "homepage": "https://github.com/Carolments/Refactory-Catalyst10-Final-Technical-Assessment#readme"
+}

@@ -1,0 +1,185 @@
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+body{
+    background-color: aqua;
+}
+.container{
+    background-color: antiquewhite;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    height:auto
+}
+#black{
+    background-color: black;
+    width: 490px;
+    border-color: black;
+}
+#yellow{
+    background-color: yellow;
+    width: 490px;
+    border-color: yellow;
+}
+#red{
+    background-color: red;
+    width: 490px;
+    border-color: red;
+}
+#emb{
+    position: relative;
+    top:-120px;
+}
+h1{
+    position: relative;
+    top: -120px;
+    font-size: 20px;
+}
+h2{
+    position: relative;
+    top: -117px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    position: relative;
+    top: -117px;
+}
+form{
+    position: relative;
+    top:-100px;
+    padding:5px;
+}
+.sur{
+    position: relative;
+    left:-180px;
+}
+.surpac{
+    position:relative;
+    left:-87px
+}
+.given{
+    position: relative;
+    top:-20px;
+    right: 27px;
+}
+.givepac{
+    position:relative;
+    left: 100px;
+    top:-20px
+}
+.date{
+    position:relative;
+    left: -50px;
+    top:-20px;
+}
+#date{
+    position:relative;
+    left: -137px;
+}
+.place{
+    position:relative;
+    left: -30px;
+    top:-20px;
+    padding-top: 3px;
+}
+.plaspac{
+    position:relative;
+    left: 100px;
+    top:-20px;
+    padding-top: 3px;
+}
+.opt{
+    position:relative;
+    left: -177px;
+    top:-20px;
+    padding-top: 3px; 
+}
+.optpac{
+    position:relative;
+    left: -91px;
+    top:-20px;
+    padding-top: 3px;
+}
+.national{
+    position:relative;
+    left: -34px;
+    top: -40px;
+    padding-top: 3px; 
+}
+.nation{
+    position:relative;
+    left: 101px;
+    top:-40px;
+    padding-top: 3px;
+}
+.gend{
+    position: relative;
+    top:-60px;
+    left: -87px;
+}
+.gender{
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+    color:black;
+}
+.radio input{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+.male{
+    position: relative;
+    top:-40px;
+    left: -157px;
+}
+.fmale{
+    position: relative;
+    top:-70px;
+    left:90px;
+}
+.m{
+    position: relative;
+    top:-40px;
+    left: -157px; 
+}
+.fm{
+    position: relative;
+    top:-70px;
+    left:90px;
+
+}
+.option{
+    position:relative;
+    left: -0px;
+    top: -60px;
+    line-height: 10px;
+    border-radius: 6px;
+    width: 433px;
+    height: 30px;
+    font-size: 16px;
+    color:black;
+    outline: none;
+    overflow: hidden;
+ }
+ option option{
+     font-size: 20px;
+ }
+ .name{
+     position:relative;
+     right:167px;
+     top: -70px
+ }
+ .mode{
+     position: relative;
+     left: 190px;
+     border-width: 20px;
+     border-radius: 7px;
+     background-color: royalblue;
+     font-weight: bold;
+ }

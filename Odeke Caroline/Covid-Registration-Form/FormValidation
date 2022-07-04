@@ -1,0 +1,189 @@
+// input variable initialization 
+const Surname = document.Form.Surname;
+const Given name = document.Form.Given name;
+
+//displaying errors picked from id of error element in form
+const Surname= document.getElementById('Sname');
+const Given name = document.getElementById('Gname');
+
+// eventlisteners from the declared constants
+Surname.addEventListener('blur',Surname _verify, true);
+Given name.addEventListener('blur',Given name _verify, true);
+
+// //get value for input variables used to access the DOM
+// Surname = name .value;
+//Given name  = name.value;
+
+// validations
+function validate(){
+     //first name validation, checking if its empty
+     if(Surname.value ===''){
+        Surname.textContent = 'Surname is required';
+        Surname.focus();
+        return false;
+    }
+    if(Given name.value ===''){
+        nameError.textContent = 'This field is required';
+        Name.focus();
+        return false;
+    }
+
+function validate(){
+     //first name validation, checking if its empty
+     if( Givenname.value ===''){
+        Givenname.textContent = 'Givenname is required';
+         Givenname.focus();
+        return false;
+    }
+    if(Givenname.value ===''){
+        nameError.textContent = 'This field is required';
+        Name.focus();
+        return false;
+    }
+
+function validate(){
+     //first name validation, checking if its empty
+     if(DateofBirth.value ===''){
+        DateofBirth.textContent = 'Date of Birth is required';
+        DateofBirth.focus();
+        return false;
+    }
+    if(Given DateofBirth .value ===''){
+        dateError.textContent = 'Select Date of Birth';
+        Date.focus();
+        return false;
+    }
+
+function validate(){
+     //first name validation, checking if its empty
+     if(Placeofresidence.value ===''){
+        Placeofresidence.textContent = 'Place of residence is required';
+        Placeofresidence.focus();
+        return false;
+    }
+    if( Placeofresidence.value ===''){
+       Placeofresidence Error.textContent = 'This field is required';
+        Placeofresidence.focus();
+        return false;
+    }
+
+
+function validate(){
+     //first name validation, checking if its empty
+     if(Occupation.value ===''){
+        Occupation.textContent = ' Occupation is required';
+        Occupation.focus();
+        return false;
+    }
+    if(Occupation.value ===''){
+        OccupationError.textContent = 'This field is required';
+        Occupation.focus();
+        return false;
+    }
+
+function validate(){
+     //first name validation, checking if its empty
+     if(Nationality.value ===''){
+        Nationality.textContent = 'Nationality is required';
+       Nationality .focus();
+        return false;
+    }
+    if(Nationality.value ===''){
+        NationalityError.textContent = 'This field is required';
+        Nationality.focus();
+        return false;
+    }
+
+}
+
+//regex
+// for Surname size
+const sizeRegex = /^[0-9a-zA-Z]+$/; // for Surname
+
+//event handlers for correct data
+//Surnamesize
+function Surname_verify(){
+    if(Surname.value !='' && Surname.value.match(sizeRegex)){
+        Surname.innerHTML = '';
+        return true;
+    }
+    else{
+       nameError.textContent = 'name should be between 1-6 alpha-bet characters'
+       Surname.focus();
+        return false;
+       }
+}
+ 
+function Givename_verify(){
+    if(Givenname.value !='' && Givenname.value.match(sizeRegex)){
+        nameError.innerHTML = '';
+        return true;
+    }
+    else{
+        nameError.textContent = 'name should be between 1-6 alpha-bet characters'
+        Givenname.focus();
+        return false;
+       }
+}
+
+function DateofBirth_verify(){
+    if(DateofBirth.value !='' && DateofBirth.value.match(sizeRegex)){
+       DateofBirth Error.innerHTML = '';
+        return true;
+    }
+    else{
+        DateofBirthError.textContent = 'Tests can only be carriedout to a patient who is atleast 1yr and at most to 150yrs'
+        DateofBirth.focus();
+        return false;
+       }
+}
+
+function PlaceofResidence_verify(){
+    if(PlaceofResidence.value !='' && PlaceofResidence.value.match(sizeRegex)){
+       PlaceofResidence Error.innerHTML = '';
+        return true;
+    }
+    else{
+        PlaceofResidenceError.textContent = 'should be between 1-20 alpha-bet characters'
+       PlaceofResidence .focus();
+        return false;
+       }
+}
+
+function Occupation_verify(){
+    if(Occupation.value !='' && Occupation.value.match(sizeRegex)){
+        OccupationError.innerHTML = '';
+        return true;
+    }
+    else{
+        OccupationError.textContent = 'should be between 5-50 alpha-bet characters'
+       Occupation.focus();
+        return false;
+       }
+}
+
+function Nationality_verify(){
+    if(Nationality).value !='' &&  Nationality.value.match(sizeRegex)){
+        NationalityError.innerHTML = '';
+        return true;
+    }
+    else{
+       Nationality Error.textContent = 'should be between 5-20 alpha-bet characters'
+        Nationality.focus();
+        return false;
+       }
+}
+
+
+function Gender_verify(){
+    if(Gender).value !='' && Gender.value.match(sizeRegex)){
+       Gender Error.innerHTML = '';
+        return true;
+    }
+    else{
+        GenderError.textContent = 'a patient should only either a Male or Female'
+      Gender .focus();
+        return false;
+       }
+}
+
